@@ -1,0 +1,11 @@
+[ 2017-06-21T14:32:49+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '定州政府' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='定州政府',`user_pass`='c535018ee9462528399ee752829055a3e8e29ff02bdb89af',`user_nicename`='定州市政府',`user_email`='justfortheday@163.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-21 14:32:49',`create_time`='2017-02-22 02:03:51',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '1' [ RunTime:0.0000s ]
+

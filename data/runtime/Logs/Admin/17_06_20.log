@@ -1,0 +1,62 @@
+[ 2017-06-20T10:36:08+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:5.7969s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '林业局' LIMIT 1   [ RunTime:0.1563s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.2656s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '47' AND `status` = 1  [ RunTime:0.1211s ]
+SQL: UPDATE `sp_users` SET `user_login`='林业局',`user_pass`='c535018ee946c21d405c2dcbc32c12de40616ca9952889af',`user_nicename`='',`user_email`='47@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-20 10:36:08',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '47' [ RunTime:0.2070s ]
+
+[ 2017-06-20T10:58:33+08:00 ] 123.125.26.234 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007812s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.058594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.093750s ]
+
+[ 2017-06-20T11:03:34+08:00 ] 123.125.26.234 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-20T11:03:40+08:00 ] 123.125.26.234 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-20T11:03:44+08:00 ] 123.125.26.234 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-20T11:03:50+08:00 ] 123.125.26.234 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '就业训练中心' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-20T11:03:59+08:00 ] 123.125.26.234 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '就业训练中心' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-20T11:04:13+08:00 ] 123.125.26.234 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '就业训练中心' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '40' AND `status` = 1  [ RunTime:0.0156s ]
+SQL: UPDATE `sp_users` SET `user_login`='就业训练中心',`user_pass`='c535018ee94607ad169864bcf54de3aa89f9b6514f7e89af',`user_nicename`='',`user_email`='40@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='123.125.26.234',`last_login_time`='2017-06-20 11:04:13',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '40' [ RunTime:0.0000s ]
+

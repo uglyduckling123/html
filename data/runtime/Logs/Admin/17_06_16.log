@@ -1,0 +1,323 @@
+[ 2017-06-16T15:05:29+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '住房公积金' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0156s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '89' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='住房公积金',`user_pass`='c535018ee946149a54722412d44e996ea221344875e189af',`user_nicename`='',`user_email`='89@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 15:05:29',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '89' [ RunTime:0.0000s ]
+
+[ 2017-06-16T15:17:00+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '疾控中心' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0156s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '61' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='疾控中心',`user_pass`='c535018ee9462a50c54199176492eaa0a7d7fc1f155989af',`user_nicename`='',`user_email`='61@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 15:17:00',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '61' [ RunTime:0.0000s ]
+
+[ 2017-06-16T15:21:08+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '卫计综合监督执法局' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '62' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='卫计综合监督执法局',`user_pass`='c535018ee94619742f34df05b27b3be631100fbc9b1c89af',`user_nicename`='',`user_email`='62@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 15:21:08',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '62' [ RunTime:0.0000s ]
+
+[ 2017-06-16T15:31:19+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '机关事务管理局' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '68' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='机关事务管理局',`user_pass`='c535018ee946f50a216085fe2447b1f540c63fa586be89af',`user_nicename`='',`user_email`='68@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 15:31:19',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '68' [ RunTime:0.0156s ]
+
+[ 2017-06-16T15:34:13+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '政府办' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0156s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '67' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='政府办',`user_pass`='c535018ee946e50dc4cfe80c4b2a7c97a28fdbd166b589af',`user_nicename`='',`user_email`='67@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 15:34:13',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '67' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:02:37+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '信访局' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '71' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='信访局',`user_pass`='c535018ee9464e35e8b92d07658a083bbf6b13f5ec4889af',`user_nicename`='',`user_email`='71@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:02:37',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '71' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:07:21+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '粮食局' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '72' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='粮食局',`user_pass`='c535018ee94601cde89845aa1ed4446e35d46680f63389af',`user_nicename`='',`user_email`='72@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:07:21',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '72' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:08:30+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '环保局' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '73' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='环保局',`user_pass`='c535018ee946883d1058aa6a2930c0eaf0c69fb65b7289af',`user_nicename`='',`user_email`='73@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:08:30',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '73' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:26:52+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '总工会' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0156s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '76' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='总工会',`user_pass`='c535018ee9469e632425614686ec7845a011088f015f89af',`user_nicename`='',`user_email`='76@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:26:52',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '76' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:33:02+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '团委' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '77' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='团委',`user_pass`='c535018ee946255a5cac7685572274d02f04c37be77189af',`user_nicename`='',`user_email`='77@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:33:02',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '77' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:43:54+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '妇联' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0156s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '78' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='妇联',`user_pass`='c535018ee9463d296788f2a7e19ffbd912521d94a5f489af',`user_nicename`='',`user_email`='78@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:43:54',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '78' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:47:13+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '文联' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '79' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='文联',`user_pass`='c535018ee9467fde9a45d4629dc4647d6f6345e00b5389af',`user_nicename`='',`user_email`='79@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:47:13',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '79' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:48:51+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '科协' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '80' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='科协',`user_pass`='c535018ee9467cd783981c6e1d370e89a87ea7f609f189af',`user_nicename`='',`user_email`='80@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:48:51',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '80' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:54:31+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '消防大队' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '83' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='消防大队',`user_pass`='c535018ee946ffbe36a8056ea8eab0f57a8b9dcf29f789af',`user_nicename`='',`user_email`='83@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:54:31',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '83' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:56:30+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '质监局' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '86' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='质监局',`user_pass`='c535018ee9469ed1d718cf330795214ccd8e1fcdde0989af',`user_nicename`='',`user_email`='86@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:56:30',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '86' [ RunTime:0.0000s ]
+
+[ 2017-06-16T16:58:30+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '北城区' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '91' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='北城区',`user_pass`='c535018ee946fd76c4079f65a804151557c566679cae89af',`user_nicename`='',`user_email`='94@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 16:58:30',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '91' [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:00:10+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '南城区' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '92' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='南城区',`user_pass`='c535018ee946dbaa1a291887fff225c932c794ff9c6c89af',`user_nicename`='',`user_email`='95@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 17:00:10',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '92' [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:01:53+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '西城区' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '93' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='西城区',`user_pass`='c535018ee9469738d61dcd0800b5c54f6eb5c46902e089af',`user_nicename`='',`user_email`='96@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 17:01:53',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '93' [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:03:57+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '东旺镇' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '94' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='东旺镇',`user_pass`='c535018ee9463657f30781d07cd157bf2c0ea967962089af',`user_nicename`='',`user_email`='97@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 17:03:57',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '94' [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:06:22+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '东亭镇' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0156s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '97' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='东亭镇',`user_pass`='c535018ee94674b3490b5be51a1e110baaf044e35c9389af',`user_nicename`='',`user_email`='100@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 17:06:22',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '97' [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:10:47+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '留早镇' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '101' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='留早镇',`user_pass`='c535018ee946309e6d3b36f6ea6c9f04bcf5f1ff961689af',`user_nicename`='',`user_email`='104@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 17:10:47',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '101' [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:15:19+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '李亲顾镇' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '108' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='李亲顾镇',`user_pass`='c535018ee9463f8c6826b316162e87debf5b8ce1afa489af',`user_nicename`='',`user_email`='111@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 17:15:19',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '108' [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:16:58+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '邢邑镇' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '109' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='邢邑镇',`user_pass`='c535018ee946d16fb36f0911f878998c136191af705e89af',`user_nicename`='',`user_email`='112@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 17:16:58',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '109' [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:18:42+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '西城乡' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '112' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='西城乡',`user_pass`='c535018ee9464ffc8a0cd651e1ce774c3e8fa7441b7689af',`user_nicename`='',`user_email`='116@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 17:18:42',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '112' [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:20:33+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '息冢镇' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:20:50+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-16T17:20:59+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-16T17:21:18+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '息冢镇' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:21:40+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-16T17:21:45+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '息仲镇' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-16T17:22:00+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-16T17:25:19+08:00 ] 121.18.119.230 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = '农工委' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '14' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='农工委',`user_pass`='c535018ee94618bc46ea906c5e95246bbb19e89e9a2c89af',`user_nicename`='',`user_email`='14@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.18.119.230',`last_login_time`='2017-06-16 17:25:19',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '14' [ RunTime:0.0000s ]
+

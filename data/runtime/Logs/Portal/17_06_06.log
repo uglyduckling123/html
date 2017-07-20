@@ -1,0 +1,607 @@
+[ 2017-06-06T16:09:12+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '40' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 190 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 190 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 190 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-23 16:53',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='定州市就业服务局就业训练中心2017年预算公开',`post_keywords`='',`post_source`='',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/59365cd4577e7.doc\" title=\"就业训练中心2017年预算公开情况说明.doc\">就业训练中心2017年预算公开情况说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/59365cd45b4f0.xls\" title=\"就业训练中心2017年预算公开表格.xls\">就业训练中心2017年预算公开表格.xls</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '190' [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:11:06+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=check&check=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '40' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/check')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: SELECT `object_id` FROM `sp_term_relationships` WHERE ( tid in (190) )  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_posts` SET `post_status`='1' WHERE ( id in (190) ) [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:14:48+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T16:17:38+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '40' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/delete')  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0156s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='0' WHERE ( tid in (190) ) [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:17:53+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=52 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '52' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0156s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 86 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 86 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 86 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-23 15:36:09',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='定州市安全生产监督管理局2017年部门预算公开信息',`post_keywords`='',`post_source`='安监局',`post_content`='<p>1、2017年预算公开目录</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170323/58d3b56e65806.doc\" title=\"2017年预算公开目录.doc\">2017年预算公开目录.doc</a></p><p>2、定州市安全生产监督管理局部门预算公开表</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/5936652ec9ef5.xls\" title=\"安监局2017年预算公开表格.xls\">安监局2017年预算公开表格.xls</a></p><p>3、定州市安全生产监督管理局部门预算公开说明</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170323/58d3b57f46fbe.doc\" title=\"安监局2017年部门预算公开说明.doc\">安监局2017年部门预算公开说明.doc</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '86' [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:18:59+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T16:19:22+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '40' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/add_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 50 行.
+SQL: INSERT INTO `sp_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_category`,`post_title`,`post_keywords`,`post_source`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2017-03-23 16:35','1','0','0','0','就业训练中心2017年预算公开情况说明','','','<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/5936656b29b7b.doc\" title=\"就业训练中心2017年预算公开情况说明.doc\">就业训练中心2017年预算公开情况说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/5936656b2d884.xls\" title=\"就业训练中心2017年预算公开表格.xls\">就业训练中心2017年预算公开表格.xls</a></p><p><br/></p>','2017-06-06 16:19:22','40','{\"thumb\":\"\"}') [ RunTime:0.0156s ]
+SQL: INSERT INTO `sp_term_relationships` (`term_id`,`object_id`) VALUES ('1','191') [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:20:24+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 50 行.
+SQL: INSERT INTO `sp_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_category`,`post_title`,`post_keywords`,`post_source`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2017-03-23 16:35','1','0','0','0','就业训练中心2017年预算公开情况说明','','','<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593665b8c61ec.xls\" title=\"就业训练中心2017年预算公开表格.xls\">就业训练中心2017年预算公开表格.xls</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593665b8c61ec.doc\" title=\"就业训练中心2017年预算公开情况说明.doc\">就业训练中心2017年预算公开情况说明.doc</a></p><p><br/></p>','2017-06-06 16:20:24','1','{\"thumb\":\"\"}') [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_term_relationships` (`term_id`,`object_id`) VALUES ('1','192') [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:21:22+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=53 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '53' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0156s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 100 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 100 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 100 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-23 18:50:56',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='定州市交通系统2017年部门预算公开信息',`post_keywords`='',`post_source`='交通局',`post_content`='<p>1、2017年预算公开目录</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170323/58d3b43cc10de.doc\" title=\"2017年预算公开目录.doc\">2017年预算公开目录.doc</a></p><p>2、定州市交通系统预算公开表</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593665fe4fdd5.xls\" title=\"交通局2017年预算公开表格.xls\">交通局2017年预算公开表格.xls</a></p><p>3、定州市交通系统预算公开说明</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170323/58d3b476d7f14.doc\" title=\"2017年定州市交通系统预算公开说明.doc\">2017年定州市交通系统预算公开说明.doc</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '100' [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:22:57+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='0' WHERE ( tid in (191,192) ) [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:23:57+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T16:25:56+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=58 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '58' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0156s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0156s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 137 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 137 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 137 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-24 19:40:16',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='2017年预算公开',`post_keywords`='',`post_source`='',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170324/58d505d4e7338.docx\" title=\"定州市教育局2017年预算说明.docx\">定州市教育局2017年预算说明.docx</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/5936670ebe7da.xls\" title=\"教育局2017年预算公开表格.xls\">教育局2017年预算公开表格.xls</a></p><p style=\"line-height: 16px;\"><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '137' [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:27:43+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T16:28:36+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '40' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/add_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 50 行.
+SQL: INSERT INTO `sp_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_category`,`post_title`,`post_keywords`,`post_source`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2017-06-06 16:27:26','1','0','0','0','就业训练中心2017年预算公开情况说明','','','<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593667b22d884.doc\" title=\"就业训练中心2017年预算公开情况说明.doc\">就业训练中心2017年预算公开情况说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593667b238f9f.xls\" title=\"就业训练中心2017年预算公开表格.xls\">就业训练中心2017年预算公开表格.xls</a></p><p><br/></p>','2017-06-06 16:28:36','40','{\"thumb\":\"\"}') [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_term_relationships` (`term_id`,`object_id`) VALUES ('1','193') [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:29:27+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '40' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0156s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 193 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 193 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 193 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-24 16:33',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='就业训练中心2017年预算公开情况说明',`post_keywords`='',`post_source`='',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593667b22d884.doc\" title=\"就业训练中心2017年预算公开情况说明.doc\">就业训练中心2017年预算公开情况说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593667b238f9f.xls\" title=\"就业训练中心2017年预算公开表格.xls\">就业训练中心2017年预算公开表格.xls</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '193' [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:33:25+08:00 ] 111.207.160.68 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '40' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0156s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0156s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 193 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 193 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 193 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-23 16:33',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='就业训练中心2017年预算公开情况说明',`post_keywords`='',`post_source`='',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593667b22d884.doc\" title=\"就业训练中心2017年预算公开情况说明.doc\">就业训练中心2017年预算公开情况说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593667b238f9f.xls\" title=\"就业训练中心2017年预算公开表格.xls\">就业训练中心2017年预算公开表格.xls</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '193' [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:33:48+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T16:34:25+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '75' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0156s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 95 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 95 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 95 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-23 18:25:41',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='定州市商务局2017年部门预算公开信息',`post_keywords`='',`post_source`='商务局',`post_content`='<p>1、2017年预算公开目录</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170323/58d3b79e33e91.doc\" title=\"2017年预算公开目录.doc\">2017年预算公开目录.doc</a></p><p>2、定州市商务局预算公开表</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/5936690e29b7b.xls\" title=\"商务局2017年预算公开表格.xls\">商务局2017年预算公开表格.xls</a></p><p>3、定州市商务局预算公开说明</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170323/58d3b7aeeed4a.doc\" title=\"2017年定州市商务局预算公开说明.doc\">2017年定州市商务局预算公开说明.doc</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '95' [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:37:55+08:00 ] 111.207.160.68 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '40' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 193 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 193 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 193 AND `term_id` = '1' [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-24 16:33',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='就业训练中心2017年预算公开情况说明',`post_keywords`='',`post_source`='',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593667b22d884.doc\" title=\"就业训练中心2017年预算公开情况说明.doc\">就业训练中心2017年预算公开情况说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593667b238f9f.xls\" title=\"就业训练中心2017年预算公开表格.xls\">就业训练中心2017年预算公开表格.xls</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '193' [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:37:59+08:00 ] 111.207.160.68 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '40' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0156s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 193 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 193 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 193 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-24 16:33',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='就业训练中心2017年预算公开情况说明',`post_keywords`='',`post_source`='',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593667b22d884.doc\" title=\"就业训练中心2017年预算公开情况说明.doc\">就业训练中心2017年预算公开情况说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593667b238f9f.xls\" title=\"就业训练中心2017年预算公开表格.xls\">就业训练中心2017年预算公开表格.xls</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '193' [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:43:08+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=69 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0156s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '69' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 177 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 177 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 177 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-28 10:40:00',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='2017年预算公开',`post_keywords`='',`post_source`='',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170328/58d9cd651cdea.doc\" title=\"地方志预算公开说明.doc\">地方志预算公开说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/59366b186e61d.xls\" title=\"地方志2017年预算公开表格.xls\">地方志2017年预算公开表格.xls</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '177' [ RunTime:0.0000s ]
+
+[ 2017-06-06T16:49:17+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T16:58:44+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T17:02:23+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=77 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '77' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0156s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0156s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 118 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 118 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 118 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-24 15:11:31',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='共青团定州市委预算公开',`post_keywords`='预算',`post_source`='',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/59366f9c0762a.xlsx\" title=\"团委2017年预算公开表格.xlsx\">团委2017年预算公开表格.xlsx</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/59366f9c0b333.docx\" title=\"团委2017年预算公开情况说明.docx\">团委2017年预算公开情况说明.docx</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '118' [ RunTime:0.0000s ]
+
+[ 2017-06-06T17:02:30+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=delete&term=&tid=119
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=77 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '77' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0156s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/delete')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='0' WHERE ( tid=119 ) [ RunTime:0.0000s ]
+
+[ 2017-06-06T17:04:21+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=81 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0156s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '81' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 13 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 13 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 13 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-15 09:46:05',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='2017年残联部门预算及部门预算公开说明',`post_keywords`='',`post_source`='定州市残联',`post_content`='<p style=\"line-height: 16px;\"><img src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\" style=\"vertical-align: middle; margin-right: 2px;\"/><a href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170315/58c89d7306496.doc\" title=\"2017残联部门预算公开说明.doc\" style=\"font-size: 12px; color: rgb(0, 102, 204);\">2017残联部门预算公开说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593670124fdd5.xls\" title=\"残联2017年预算公开表格.xls\">残联2017年预算公开表格.xls</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '13' [ RunTime:0.0000s ]
+
+[ 2017-06-06T17:04:46+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T17:06:41+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=85 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '85' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 160 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 160 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 160 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-27 11:53:12',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='2017年预算',`post_keywords`='',`post_source`='',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170327/58d88cbfd0291.doc\" title=\"定州市工商行政管理局部门预算公开说明.doc\">定州市工商行政管理局部门预算公开说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/5936709cc9ef5.xls\" title=\"工商局2017年预算公开表格.xls\">工商局2017年预算公开表格.xls</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '160' [ RunTime:0.0000s ]
+
+[ 2017-06-06T17:08:32+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T17:09:25+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=85 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '85' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0156s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0156s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 160 AND `term_id` NOT IN ('1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 160 AND `term_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 160 AND `term_id` = '1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-03-27 11:53:12',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='2017年工商局预算公开',`post_keywords`='',`post_source`='',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170327/58d88cbfd0291.doc\" title=\"定州市工商行政管理局部门预算公开说明.doc\">定州市工商行政管理局部门预算公开说明.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/5936709cc9ef5.xls\" title=\"工商局2017年预算公开表格.xls\">工商局2017年预算公开表格.xls</a></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '160' [ RunTime:0.0000s ]
+
+[ 2017-06-06T17:12:14+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=41 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '41' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/add_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 50 行.
+SQL: INSERT INTO `sp_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_category`,`post_title`,`post_keywords`,`post_source`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2017-03-17 10:22','1','0','0','0','再就业中心2017年预算公开','','','<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593671e8dd022.xls\" title=\"再就业服务中心2017年预算公开表格.xls\">再就业服务中心2017年预算公开表格.xls</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593671e8e0d2b.doc\" title=\"再就业服务中心2017年预算公开情况说明.doc\">再就业服务中心2017年预算公开情况说明.doc</a></p><p><br/></p>','2017-06-06 17:12:14','41','{\"thumb\":\"\"}') [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_term_relationships` (`term_id`,`object_id`) VALUES ('1','194') [ RunTime:0.0000s ]
+
+[ 2017-06-06T17:14:45+08:00 ] 121.18.119.230 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=37 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '37' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0156s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/add_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: smeta D:\phpStudys\WWW\application\Portal\Controller\AdminPostController.class.php 第 50 行.
+SQL: INSERT INTO `sp_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_category`,`post_title`,`post_keywords`,`post_source`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2017-03-20 12:15','1','0','0','0','失业保险所2017年预算公开','','','<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/5936726772326.xls\" title=\"失业保险所2017年预算公开表格.xls\">失业保险所2017年预算公开表格.xls</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://czj.dzs.gov.cn/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://czj.dzs.gov.cn/data/upload/ueditor/20170606/593672677da41.doc\" title=\"失业保险所2017年预算公开情况说明.doc\">失业保险所2017年预算公开情况说明.doc</a></p><p><br/></p>','2017-06-06 17:14:45','37','{\"thumb\":\"\"}') [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_term_relationships` (`term_id`,`object_id`) VALUES ('1','195') [ RunTime:0.0000s ]
+
+[ 2017-06-06T17:14:49+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T17:23:18+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T17:41:33+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T17:46:16+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T17:50:07+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T17:50:16+08:00 ] 139.162.88.63 http://clientapi.ipip.net/echo.php?info=1234567890
+ERR: 无法加载控制器:Echo
+
+[ 2017-06-06T18:03:24+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T18:29:10+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T18:57:41+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T19:13:19+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T19:32:27+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T19:48:36+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T19:51:32+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T19:56:50+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:00:31+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:11:16+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:20:49+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:23:30+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:26:38+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:31:08+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:37:07+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:37:43+08:00 ] 221.192.236.94 /manager/html
+ERR: 无法加载控制器:Manager
+
+[ 2017-06-06T20:43:15+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:45:35+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:48:40+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T20:56:56+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T21:02:55+08:00 ] 66.249.66.20 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T21:03:01+08:00 ] 103.240.125.36 /plus/download.php?open=1&arrs1[]=99&arrs1[]=102&arrs1[]=103&arrs1[]=95&arrs1[]=100&arrs1[]=98&arrs1[]=112&arrs1[]=114&arrs1[]=101&arrs1[]=102&arrs1[]=105&arrs1[]=120&arrs2[]=109&arrs2[]=121&arrs2[]=116&arrs2[]=97&arrs2[]=103&arrs2[]=96&arrs2[]=32&arrs2[]=40&arrs2[]=97&arrs2[]=105&arrs2[]=100&arrs2[]=44&arrs2[]=101&arrs2[]=120&arrs2[]=112&arrs2[]=98&arrs2[]=111&arrs2[]=100&arrs2[]=121&arrs2[]=44&arrs2[]=110&arrs2[]=111&arrs2[]=114&arrs2[]=109&arrs2[]=98&arrs2[]=111&arrs2[]=100&arrs2[]=121&arrs2[]=41&arrs2[]=32&arrs2[]=86&arrs2[]=65&arrs2[]=76&arrs2[]=85&arrs2[]=69&arrs2[]=83&arrs2[]=40&arrs2[]=49&arrs2[]=57&arrs2[]=48&arrs2[]=49&arrs2[]=53&arrs2[]=44&arrs2[]=64&arrs2[]=96&arrs2[]=92&arrs2[]=39&arrs2[]=96&arrs2[]=44&arrs2[]=39&arrs2[]=123&arrs2[]=100&arrs2[]=101&arrs2[]=100&arrs2[]=101&arrs2[]=58&arrs2[]=112&arrs2[]=104&arrs2[]=112&arrs2[]=125&arrs2[]=102&arrs2[]=105&arrs2[]=108&arrs2[]=101&arrs2[]=95&arrs2[]=112&arrs2[]=117&arrs2[]=116&arrs2[]=95&arrs2[]=99&arrs2[]=111&arrs2[]=110&arrs2[]=116&arrs2[]=101&arrs2[]=110&arrs2[]=116&arrs2[]=115&arrs2[]=40&arrs2[]=39&arrs2[]=39&arrs2[]=101&arrs2[]=55&arrs2[]=120&arrs2[]=117&arrs2[]=101&arrs2[]=46&arrs2[]=112&arrs2[]=104&arrs2[]=112&arrs2[]=39&arrs2[]=39&arrs2[]=44&arrs2[]=39&arrs2[]=39&arrs2[]=60&arrs2[]=63&arrs2[]=112&arrs2[]=104&arrs2[]=112&arrs2[]=32&arrs2[]=101&arrs2[]=118&arrs2[]=97&arrs2[]=108&arrs2[]=40&arrs2[]=36&arrs2[]=95&arrs2[]=80&arrs2[]=79&arrs2[]=83&arrs2[]=84&arrs2[]=91&arrs2[]=101&arrs2[]=55&arrs2[]=120&arrs2[]=117&arrs2[]=101&arrs2[]=93&arrs2[]=41&arrs2[]=59&arrs2[]=63&arrs2[]=62&arrs2[]=119&arrs2[]=119&arrs2[]=119&arrs2[]=46&arrs2[]=101&arrs2[]=55&arrs2[]=120&arrs2[]=117&arrs2[]=101&arrs2[]=46&arrs2[]=99&arrs2[]=111&arrs2[]=109&arrs2[]=39&arrs2[]=39&arrs2[]=41&arrs2[]=59&arrs2[]=123&arrs2[]=47&arrs2[]=100&arrs2[]=101&arrs2[]=100&arrs2[]=101&arrs2[]=58&arrs2[]=112&arrs2[]=104&arrs2[]=112&arrs2[]=125&arrs2[]=39&arrs2[]=41&arrs2[]=32&arrs2[]=35&arrs2[]=32&arrs2[]=64&arrs2[]=96&arrs2[]=92&arrs2[]=39&arrs2[]=96
+ERR: 无法加载控制器:Plus
+
+[ 2017-06-06T21:03:02+08:00 ] 103.240.125.36 /plus/download.php?open=1&arrs1[]=99&arrs1[]=102&arrs1[]=103&arrs1[]=95&arrs1[]=100&arrs1[]=98&arrs1[]=112&arrs1[]=114&arrs1[]=101&arrs1[]=102&arrs1[]=105&arrs1[]=120&arrs2[]=109&arrs2[]=121&arrs2[]=116&arrs2[]=97&arrs2[]=103&arrs2[]=96&arrs2[]=32&arrs2[]=40&arrs2[]=97&arrs2[]=105&arrs2[]=100&arrs2[]=44&arrs2[]=101&arrs2[]=120&arrs2[]=112&arrs2[]=98&arrs2[]=111&arrs2[]=100&arrs2[]=121&arrs2[]=44&arrs2[]=110&arrs2[]=111&arrs2[]=114&arrs2[]=109&arrs2[]=98&arrs2[]=111&arrs2[]=100&arrs2[]=121&arrs2[]=41&arrs2[]=32&arrs2[]=86&arrs2[]=65&arrs2[]=76&arrs2[]=85&arrs2[]=69&arrs2[]=83&arrs2[]=40&arrs2[]=49&arrs2[]=57&arrs2[]=48&arrs2[]=49&arrs2[]=53&arrs2[]=44&arrs2[]=64&arrs2[]=96&arrs2[]=92&arrs2[]=39&arrs2[]=96&arrs2[]=44&arrs2[]=39&arrs2[]=123&arrs2[]=100&arrs2[]=101&arrs2[]=100&arrs2[]=101&arrs2[]=58&arrs2[]=112&arrs2[]=104&arrs2[]=112&arrs2[]=125&arrs2[]=102&arrs2[]=105&arrs2[]=108&arrs2[]=101&arrs2[]=95&arrs2[]=112&arrs2[]=117&arrs2[]=116&arrs2[]=95&arrs2[]=99&arrs2[]=111&arrs2[]=110&arrs2[]=116&arrs2[]=101&arrs2[]=110&arrs2[]=116&arrs2[]=115&arrs2[]=40&arrs2[]=39&arrs2[]=39&arrs2[]=101&arrs2[]=55&arrs2[]=120&arrs2[]=117&arrs2[]=101&arrs2[]=46&arrs2[]=112&arrs2[]=104&arrs2[]=112&arrs2[]=39&arrs2[]=39&arrs2[]=44&arrs2[]=39&arrs2[]=39&arrs2[]=60&arrs2[]=63&arrs2[]=112&arrs2[]=104&arrs2[]=112&arrs2[]=32&arrs2[]=101&arrs2[]=118&arrs2[]=97&arrs2[]=108&arrs2[]=40&arrs2[]=36&arrs2[]=95&arrs2[]=80&arrs2[]=79&arrs2[]=83&arrs2[]=84&arrs2[]=91&arrs2[]=101&arrs2[]=55&arrs2[]=120&arrs2[]=117&arrs2[]=101&arrs2[]=93&arrs2[]=41&arrs2[]=59&arrs2[]=63&arrs2[]=62&arrs2[]=119&arrs2[]=119&arrs2[]=119&arrs2[]=46&arrs2[]=101&arrs2[]=55&arrs2[]=120&arrs2[]=117&arrs2[]=101&arrs2[]=46&arrs2[]=99&arrs2[]=111&arrs2[]=109&arrs2[]=39&arrs2[]=39&arrs2[]=41&arrs2[]=59&arrs2[]=123&arrs2[]=47&arrs2[]=100&arrs2[]=101&arrs2[]=100&arrs2[]=101&arrs2[]=58&arrs2[]=112&arrs2[]=104&arrs2[]=112&arrs2[]=125&arrs2[]=39&arrs2[]=41&arrs2[]=32&arrs2[]=35&arrs2[]=32&arrs2[]=64&arrs2[]=96&arrs2[]=92&arrs2[]=39&arrs2[]=96
+ERR: 无法加载控制器:Plus
+
+[ 2017-06-06T21:03:02+08:00 ] 103.240.125.36 /plus/mytag_js.php?aid=19015
+ERR: 无法加载控制器:Plus
+
+[ 2017-06-06T21:03:02+08:00 ] 103.240.125.36 /plus/mytag_js.php?aid=19015
+ERR: 无法加载控制器:Plus
+
+[ 2017-06-06T21:03:02+08:00 ] 103.240.125.36 /plus/e7xue.php
+ERR: 无法加载控制器:Plus
+
+[ 2017-06-06T21:07:23+08:00 ] 103.240.125.36 /index.php?m=member&c=index&a=register&siteid=1
+ERR: 无法加载控制器:Member
+
+[ 2017-06-06T21:20:03+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T21:30:06+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T21:37:23+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T21:49:39+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T21:52:02+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T21:59:22+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T22:09:50+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T22:17:33+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T22:25:17+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T22:37:58+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T22:45:31+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T22:51:06+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T22:54:25+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T23:01:20+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T23:07:29+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T23:25:27+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T23:36:00+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
+[ 2017-06-06T23:55:40+08:00 ] 35.184.189.105 /robots.txt
+ERR: 无法加载控制器:Robots
+
